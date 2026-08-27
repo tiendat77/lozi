@@ -1,0 +1,17 @@
+{
+  "auth": {
+    "login": {
+      "button": "Đăng nhập",
+      "forgot_password": "",
+      "title": "Chào mừng trở lại"
+    },
+    "logout": "Đăng xuất",
+    "remember_me": ""
+  },
+  "navigation": {
+    "about": "Về chúng tôi",
+    "contact": "Liên hệ",
+    "home": "Trang chủ",
+    "pricing": "Bảng giá"
+  }
+}

@@ -1,0 +1,88 @@
+<h2>How would you like to view and edit translations?</h2>
+<p class="subtitle">Select the main UI layout for the extension webview</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Translation Matrix / Data Grid (Recommended)</h3>
+      <p>Spreadsheet-like table: rows are keys (<code>home.title</code>, <code>auth.btn</code>), columns are languages (<code>en</code>, <code>vi</code>, <code>ja</code>). Edit all languages inline, quickly spot missing translations.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Tree Navigator + Form Inspector</h3>
+      <p>Nested folder-like tree on the left (e.g., <code>auth &gt; login &gt; error</code>). Selecting a key opens dedicated input fields/textareas for each language on the right.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Searchable Key List + Multi-Lang Panel</h3>
+      <p>Flat searchable list of keys on the left with badges (e.g., 🔴 2 missing). Right pane shows side-by-side translation cards with rich diff/edit controls.</p>
+    </div>
+  </div>
+</div>
+
+<div class="split" style="margin-top: 24px;">
+  <div class="mockup">
+    <div class="mockup-header">Preview A: Matrix Grid</div>
+    <div class="mockup-body" style="font-family: monospace; font-size: 12px; padding: 12px; background: #1e1e1e; color: #d4d4d4; border-radius: 6px;">
+      <div style="display: flex; gap: 8px; margin-bottom: 10px;">
+        <input class="mock-input" style="flex: 1; padding: 4px 8px; font-size: 11px;" value="🔍 Filter keys or missing..." readonly />
+        <button class="mock-button" style="padding: 4px 8px; font-size: 11px;">+ Add Key</button>
+      </div>
+      <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+          <tr style="border-bottom: 1px solid #444; color: #888;">
+            <th style="padding: 4px 6px;">Key</th>
+            <th style="padding: 4px 6px;">🇬🇧 en.json</th>
+            <th style="padding: 4px 6px;">🇻🇳 vi.json</th>
+            <th style="padding: 4px 6px;">🇯🇵 ja.json</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid #333;">
+            <td style="padding: 6px; color: #4ec9b0;">nav.home</td>
+            <td style="padding: 6px;"><input style="width: 90%; background: #2d2d2d; border: 1px solid #555; color: #fff; padding: 2px 4px;" value="Home" readonly /></td>
+            <td style="padding: 6px;"><input style="width: 90%; background: #2d2d2d; border: 1px solid #555; color: #fff; padding: 2px 4px;" value="Trang chủ" readonly /></td>
+            <td style="padding: 6px;"><input style="width: 90%; background: #2d2d2d; border: 1px solid #555; color: #fff; padding: 2px 4px;" value="ホーム" readonly /></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #333;">
+            <td style="padding: 6px; color: #4ec9b0;">nav.pricing</td>
+            <td style="padding: 6px;"><input style="width: 90%; background: #2d2d2d; border: 1px solid #555; color: #fff; padding: 2px 4px;" value="Pricing" readonly /></td>
+            <td style="padding: 6px;"><input style="width: 90%; background: #2d2d2d; border: 1px solid #555; color: #fff; padding: 2px 4px;" value="Bảng giá" readonly /></td>
+            <td style="padding: 6px;"><input style="width: 90%; background: #5c2020; border: 1px dashed #f48771; color: #f48771; padding: 2px 4px;" value="[Missing]" readonly /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">Preview B / C: Master-Detail Inspector</div>
+    <div class="mockup-body" style="font-family: monospace; font-size: 12px; padding: 12px; background: #1e1e1e; color: #d4d4d4; border-radius: 6px; display: flex; gap: 12px;">
+      <div style="width: 40%; border-right: 1px solid #333; padding-right: 8px;">
+        <div style="color: #888; font-size: 11px; margin-bottom: 6px;">KEYS</div>
+        <div style="padding: 4px; background: #094771; border-radius: 3px; margin-bottom: 4px;">📂 auth.login</div>
+        <div style="padding: 4px 12px; color: #9cdcfe;">• title</div>
+        <div style="padding: 4px 12px; color: #f48771;">• btn_submit ⚠️</div>
+        <div style="padding: 4px 12px; color: #9cdcfe;">• forgot_pwd</div>
+      </div>
+      <div style="width: 60%;">
+        <div style="font-weight: bold; color: #4ec9b0; margin-bottom: 8px;">auth.login.title</div>
+        <div style="margin-bottom: 6px;">
+          <label style="font-size: 11px; color: #888;">🇬🇧 en.json</label>
+          <input style="width: 100%; background: #2d2d2d; border: 1px solid #555; color: #fff; padding: 3px 6px; margin-top: 2px;" value="Sign in to your account" readonly />
+        </div>
+        <div style="margin-bottom: 6px;">
+          <label style="font-size: 11px; color: #888;">🇻🇳 vi.json</label>
+          <input style="width: 100%; background: #2d2d2d; border: 1px solid #555; color: #fff; padding: 3px 6px; margin-top: 2px;" value="Đăng nhập tài khoản" readonly />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

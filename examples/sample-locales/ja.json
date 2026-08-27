@@ -1,0 +1,17 @@
+{
+  "auth": {
+    "login": {
+      "button": "ログイン",
+      "forgot_password": "パスワードをお忘れですか？",
+      "title": "おかえりなさい"
+    },
+    "logout": "",
+    "remember_me": ""
+  },
+  "navigation": {
+    "about": "私たちについて",
+    "contact": "お問い合わせ",
+    "home": "ホーム",
+    "pricing": "料金プラン"
+  }
+}
