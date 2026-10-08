@@ -5,6 +5,8 @@
 [![Visual Studio Code](https://img.shields.io/badge/VS%20Code-v1.85%2B-blue.svg)](https://code.visualstudio.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+![Lozi Screenshot](docs/screenshots/screenshot.png)
+
 ---
 
 ## 💡 What is "Lozi"?
@@ -46,8 +48,8 @@ The name **Lozi** (pronounced *“low-zee”*) is inspired by **Lo**cali**z**at*
 
 You can launch Lozi in two ways:
 
-- **Via Explorer Context Menu**: Right-click any folder containing `.json` translation files (e.g., `locales/`, `i18n/`, `translations/`) and select **`i18n: Manage Translations in Folder`**.
-- **Via Command Palette**: Press `Ctrl+Shift+P` (or `Cmd+Shift+P`), type **`i18n: Manage Translations in Folder`**, and pick your target directory.
+- **Via Explorer Context Menu**: Right-click any folder containing `.json` translation files (e.g., `locales/`, `i18n/`, `translations/`) and select **`Lozi: Manage Translations in Folder`**.
+- **Via Command Palette**: Press `Ctrl+Shift+P` (or `Cmd+Shift+P`), type **`Lozi: Manage Translations in Folder`**, and pick your target directory.
 
 ### 2. Supported Folder Layouts
 
@@ -90,7 +92,7 @@ Lozi detects the structure of each file automatically and writes changes back in
 
 | Action | Shortcut / Trigger |
 | :--- | :--- |
-| **Open Lozi** | Right-click folder → `i18n: Manage Translations in Folder` |
+| **Open Lozi** | Right-click folder → `Lozi: Manage Translations in Folder` |
 | **Save All Changes** | `Cmd + S` / `Ctrl + S` or click **Save (n)** |
 | **Filter Missing** | Click the **Missing** badge in the toolbar |
 | **Quick Search** | Type in the search box in the toolbar |
